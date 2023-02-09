@@ -14,8 +14,9 @@ enum Resources {
         static var separator = UIColor(hex: "E8ECEF")
         static var titleGray = UIColor(hex: "545C77")
         static var background = UIColor(hex: "F8F9F9")
+        static var secondary = UIColor(hex: "F0F3FF")
     }
-    
+
     enum Fonts {
         static func helveticaRegular(with size: CGFloat) -> UIFont {
             UIFont(name: "Helvetica", size: size) ?? UIFont()
@@ -29,6 +30,21 @@ enum Resources {
             static var progress = "Progress"
             static var settings = "Settings"
         }
+
+        enum NavBar {
+            static var overview = "Today"
+            static var session = "Hight Intensity Cardio"
+            static var progress = "Workout Progress"
+            static var settings = "Settings"
+        }
+
+        enum Overview {
+            static var allWorkoutsButton = "All Workouts"
+        }
+
+        enum Session {
+            static var navBarLeft = "Pause"
+        }
     }
 
     enum Images {
@@ -37,6 +53,11 @@ enum Resources {
             static var session = UIImage(systemName: "baseball")
             static var progress = UIImage(systemName: "alarm")
             static var settings = UIImage(systemName: "gear")
+        }
+
+        enum Common {
+            static var downArrow = UIImage(named: "down_arrow")
+            static var add = UIImage(named: "add_button")
         }
     }
 }

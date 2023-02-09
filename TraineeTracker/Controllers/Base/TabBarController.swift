@@ -15,19 +15,19 @@ enum Tabs: Int {
 }
 
 final class TabBarController: UITabBarController {
-    
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         configure()
     }
-    
-    required init?(coder: NSCoder) {
+
+    @available(*, unavailable)
+    required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     private func configure() {
         view.backgroundColor = .systemBackground
-        
+
         tabBar.tintColor = Resources.Colors.active
         tabBar.barTintColor = Resources.Colors.inActive
         tabBar.backgroundColor = .systemBackground
@@ -49,25 +49,24 @@ final class TabBarController: UITabBarController {
         overviewNavigation.tabBarItem = UITabBarItem(title: Resources.Strings.TabBar.overview,
                                                      image: Resources.Images.TabBar.overview,
                                                      tag: Tabs.overview.rawValue)
-        
+
         sessionNavigation.tabBarItem = UITabBarItem(title: Resources.Strings.TabBar.session,
-                                                     image: Resources.Images.TabBar.session,
-                                                     tag: Tabs.session.rawValue)
-        
+                                                    image: Resources.Images.TabBar.session,
+                                                    tag: Tabs.session.rawValue)
+
         progressNavigation.tabBarItem = UITabBarItem(title: Resources.Strings.TabBar.progress,
                                                      image: Resources.Images.TabBar.progress,
                                                      tag: Tabs.progress.rawValue)
-        
+
         settingsNavigation.tabBarItem = UITabBarItem(title: Resources.Strings.TabBar.settings,
                                                      image: Resources.Images.TabBar.settings,
                                                      tag: Tabs.settings.rawValue)
-        
-        
+
         setViewControllers([
             overviewNavigation,
             sessionNavigation,
             progressNavigation,
-            settingsNavigation
+            settingsNavigation,
         ], animated: false)
     }
 }
