@@ -87,29 +87,28 @@ extension UIView {
     @objc func handleOut() {
         UIView.animate(withDuration: 0.15) { self.alpha = 1 }
     }
-    
-    func addView(_ view:UIView) {
+
+    func addView(_ view: UIView) {
         addSubview(view)
         view.translatesAutoresizingMaskIntoConstraints = false
     }
 }
 
 extension Date {
-    
     private var calendar: Calendar {
-        return Calendar.current
+        Calendar.current
     }
-    
+
     var startOfWeek: Date {
         let components = calendar.dateComponents([.yearForWeekOfYear, .weekOfYear], from: self)
         guard let firstDay = calendar.date(from: components) else { return self }
-        return calendar.date(byAdding: .day, value:1, to: firstDay) ?? self
+        return calendar.date(byAdding: .day, value: 1, to: firstDay) ?? self
     }
-    
+
     func goForward(to days: Int) -> Date {
-        return calendar.date(byAdding: .day, value: days, to: self ) ?? self
+        calendar.date(byAdding: .day, value: days, to: self) ?? self
     }
-    
+
     func stripTime() -> Date {
         let components = calendar.dateComponents([.year, .month, .day], from: self)
         return calendar.date(from: components) ?? self

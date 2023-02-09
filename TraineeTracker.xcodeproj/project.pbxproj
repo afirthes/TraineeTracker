@@ -13,7 +13,7 @@
 		08CB0040299425A400DB6DEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08CB003E299425A400DB6DEB /* LaunchScreen.storyboard */; };
 		08CB004B2994277600DB6DEB /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB004A2994277600DB6DEB /* TabBarController.swift */; };
 		08CB004D2994280B00DB6DEB /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB004C2994280B00DB6DEB /* Extension+UIColor.swift */; };
-		08CB0051299428BB00DB6DEB /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB0050299428BB00DB6DEB /* Resources.swift */; };
+		08CB0051299428BB00DB6DEB /* R.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB0050299428BB00DB6DEB /* R.swift */; };
 		08CB00532994361500DB6DEB /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB00522994361500DB6DEB /* NavBarController.swift */; };
 		08CB00562994379000DB6DEB /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB00552994379000DB6DEB /* BaseController.swift */; };
 		08CB00582994393800DB6DEB /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB00572994393800DB6DEB /* OverviewController.swift */; };
@@ -36,7 +36,7 @@
 		08CB0041299425A400DB6DEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08CB004A2994277600DB6DEB /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		08CB004C2994280B00DB6DEB /* Extension+UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
-		08CB0050299428BB00DB6DEB /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		08CB0050299428BB00DB6DEB /* R.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.swift; sourceTree = "<group>"; };
 		08CB00522994361500DB6DEB /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
 		08CB00552994379000DB6DEB /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		08CB00572994393800DB6DEB /* OverviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewController.swift; sourceTree = "<group>"; };
@@ -131,7 +131,7 @@
 		08CB004F2994282600DB6DEB /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				08CB0050299428BB00DB6DEB /* Resources.swift */,
+				08CB0050299428BB00DB6DEB /* R.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -281,7 +281,7 @@
 				08CB006229943BB700DB6DEB /* SettingsController.swift in Sources */,
 				08CB0034299425A100DB6DEB /* AppDelegate.swift in Sources */,
 				08CB0036299425A100DB6DEB /* SceneDelegate.swift in Sources */,
-				08CB0051299428BB00DB6DEB /* Resources.swift in Sources */,
+				08CB0051299428BB00DB6DEB /* R.swift in Sources */,
 				08CB006929952BA900DB6DEB /* BaseView.swift in Sources */,
 				08CB00582994393800DB6DEB /* OverviewController.swift in Sources */,
 				08CB004D2994280B00DB6DEB /* Extension+UIColor.swift in Sources */,
