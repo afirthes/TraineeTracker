@@ -32,7 +32,7 @@ extension WeekView {
 extension WeekView.WeekDayView {
     override func setupViews() {
         super.setupViews()
-        addView(stackView)
+        setupView(stackView)
         stackView.addArrangedSubview(nameLabel)
         stackView.addArrangedSubview(dateLable)
     }

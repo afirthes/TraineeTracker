@@ -25,6 +25,7 @@
 		08CB006929952BA900DB6DEB /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB006829952BA900DB6DEB /* BaseView.swift */; };
 		08CB006C2995453400DB6DEB /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB006B2995453400DB6DEB /* WeekView.swift */; };
 		08CB006E2995464400DB6DEB /* WeekDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB006D2995464400DB6DEB /* WeekDayView.swift */; };
+		08CB00732995733000DB6DEB /* BaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB00722995733000DB6DEB /* BaseInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		08CB006829952BA900DB6DEB /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		08CB006B2995453400DB6DEB /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		08CB006D2995464400DB6DEB /* WeekDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayView.swift; sourceTree = "<group>"; };
+		08CB00722995733000DB6DEB /* BaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 		08CB00542994378200DB6DEB /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				08CB00712995731300DB6DEB /* Views */,
 				08CB004A2994277600DB6DEB /* TabBarController.swift */,
 				08CB00522994361500DB6DEB /* NavBarController.swift */,
 				08CB00552994379000DB6DEB /* BaseController.swift */,
@@ -197,6 +200,14 @@
 				08CB006D2995464400DB6DEB /* WeekDayView.swift */,
 			);
 			path = WeekView;
+			sourceTree = "<group>";
+		};
+		08CB00712995731300DB6DEB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				08CB00722995733000DB6DEB /* BaseInfoView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +296,7 @@
 				08CB006929952BA900DB6DEB /* BaseView.swift in Sources */,
 				08CB00582994393800DB6DEB /* OverviewController.swift in Sources */,
 				08CB004D2994280B00DB6DEB /* Extension+UIColor.swift in Sources */,
+				08CB00732995733000DB6DEB /* BaseInfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

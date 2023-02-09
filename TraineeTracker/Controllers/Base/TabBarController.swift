@@ -49,14 +49,10 @@ final class TabBarController: UITabBarController {
     
     private func getController(for tab: Tabs) -> BaseController {
         switch tab {
-        case .overview:
-            return OverviewController()
-        case .session:
-            return SessionController()
-        case .progress:
-            return ProgressController()
-        case .settings:
-            return SettingsController()
+        case .overview: return OverviewController()
+        case .session:  return SessionController()
+        case .progress: return ProgressController()
+        case .settings: return SettingsController()
         }
     }
 }
