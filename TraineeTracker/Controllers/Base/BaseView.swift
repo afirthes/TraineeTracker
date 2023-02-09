@@ -13,7 +13,7 @@ class BaseView: UIView {
 
         addViews()
         layoutViews()
-        configure()
+        configureViews()
     }
 
     @available(*, unavailable)
@@ -31,7 +31,7 @@ class BaseView: UIView {
         
     }
 
-    func configure() {
+    func configureViews() {
         
     }
 }
