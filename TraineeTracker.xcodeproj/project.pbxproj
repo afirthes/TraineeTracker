@@ -16,6 +16,10 @@
 		08CB0051299428BB00DB6DEB /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB0050299428BB00DB6DEB /* Resources.swift */; };
 		08CB00532994361500DB6DEB /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB00522994361500DB6DEB /* NavBarController.swift */; };
 		08CB00562994379000DB6DEB /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB00552994379000DB6DEB /* BaseController.swift */; };
+		08CB00582994393800DB6DEB /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB00572994393800DB6DEB /* OverviewController.swift */; };
+		08CB005E29943B7600DB6DEB /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB005D29943B7600DB6DEB /* SessionController.swift */; };
+		08CB006029943B9600DB6DEB /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB005F29943B9600DB6DEB /* ProgressController.swift */; };
+		08CB006229943BB700DB6DEB /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CB006129943BB700DB6DEB /* SettingsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		08CB0050299428BB00DB6DEB /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		08CB00522994361500DB6DEB /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
 		08CB00552994379000DB6DEB /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		08CB00572994393800DB6DEB /* OverviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewController.swift; sourceTree = "<group>"; };
+		08CB005D29943B7600DB6DEB /* SessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
+		08CB005F29943B9600DB6DEB /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
+		08CB006129943BB700DB6DEB /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,9 +101,11 @@
 		08CB00492994273D00DB6DEB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				08CB005C29943B5E00DB6DEB /* Settings */,
+				08CB005B29943B5700DB6DEB /* Progress */,
+				08CB005A29943B5100DB6DEB /* Session */,
+				08CB005929943B4700DB6DEB /* Overview */,
 				08CB00542994378200DB6DEB /* Base */,
-				08CB004A2994277600DB6DEB /* TabBarController.swift */,
-				08CB00522994361500DB6DEB /* NavBarController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -119,9 +129,43 @@
 		08CB00542994378200DB6DEB /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				08CB004A2994277600DB6DEB /* TabBarController.swift */,
+				08CB00522994361500DB6DEB /* NavBarController.swift */,
 				08CB00552994379000DB6DEB /* BaseController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		08CB005929943B4700DB6DEB /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				08CB00572994393800DB6DEB /* OverviewController.swift */,
+			);
+			path = Overview;
+			sourceTree = "<group>";
+		};
+		08CB005A29943B5100DB6DEB /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				08CB005D29943B7600DB6DEB /* SessionController.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		08CB005B29943B5700DB6DEB /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				08CB005F29943B9600DB6DEB /* ProgressController.swift */,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
+		08CB005C29943B5E00DB6DEB /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				08CB006129943BB700DB6DEB /* SettingsController.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,12 +238,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08CB006029943B9600DB6DEB /* ProgressController.swift in Sources */,
 				08CB004B2994277600DB6DEB /* TabBarController.swift in Sources */,
+				08CB005E29943B7600DB6DEB /* SessionController.swift in Sources */,
 				08CB00532994361500DB6DEB /* NavBarController.swift in Sources */,
 				08CB00562994379000DB6DEB /* BaseController.swift in Sources */,
+				08CB006229943BB700DB6DEB /* SettingsController.swift in Sources */,
 				08CB0034299425A100DB6DEB /* AppDelegate.swift in Sources */,
 				08CB0036299425A100DB6DEB /* SceneDelegate.swift in Sources */,
 				08CB0051299428BB00DB6DEB /* Resources.swift in Sources */,
+				08CB00582994393800DB6DEB /* OverviewController.swift in Sources */,
 				08CB004D2994280B00DB6DEB /* Extension+UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
